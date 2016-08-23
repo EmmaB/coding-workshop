@@ -1,1 +1,26 @@
-<h1>Hello, world.</h1>
+<% if query %>
+  <% unless books.empty? %>
+    <ul>
+      <% books.each do |book| %>
+        <li>
+          <% if book.image_path %>
+            <img src="<%= book.image_path %>" alt="<%= book.title %> cover image">
+          <% end %>
+
+          <h2><%= book.title %></h2>
+          <h3><%= book.authors.join(", ") if book.authors %></h3>
+          <p><%= book.description %></p>
+
+          <ul>
+            <li>Publisher: <strong><%= book.publisher %></strong></li>
+            <li>Published on: <strong><%= book.publish_date.strftime("%-d %B %Y") if book.publish_date %></strong></li>
+            <li>ISBN: <strong><%= book.isbn %></strong></li>
+          </ul>
+        </li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No books found for the query &lsquo;<strong><%= query %></strong>&rsquo;.</p>
+    <p>Please try another search.</p>
+  <% end %>
+<% end %>
