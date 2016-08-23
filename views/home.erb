@@ -23,7 +23,7 @@
                   <li>Publisher: <strong><%= book.publisher %></strong></li>
                 <% end %>
                 <% if book.publish_date %>
-                  <li>Published on: <strong><%= book.publish_date.strftime("%-d %B %Y") if book.publish_date %></strong></li>
+                  <li>Published on: <strong><%= book.publish_date.strftime("%-d %B %Y") %></strong></li>
                 <% end %>
                 <% if book.isbn %>
                   <li>ISBN: <strong><%= book.isbn %></strong></li>
