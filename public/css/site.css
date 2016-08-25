@@ -4,6 +4,7 @@ body {
   background-color: powderblue;
   margin: 0;
   padding: 60px 30px;
+  line-height: 1.4;
 }
 
 .container {
@@ -87,4 +88,16 @@ input[type=text] {
 img {
   float: left;
   width: 80px;
+}
+
+.book-info {
+  margin-bottom: 1em;
+}
+
+.book-info :first-child {
+  margin-top: 0;
+}
+
+.book-info :last-child {
+  margin-bottom: 0;
 }
