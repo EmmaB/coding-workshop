@@ -1,0 +1,30 @@
+<li class="book">
+  <% if book.image_path %>
+    <img src="<%= book.image_path %>" alt="<%= book.title %> cover image">
+  <% end %>
+
+  <div class="book-details">
+    <h2><%= book.title %></h2>
+    <% if book.authors %>
+      <h3><%= book.authors.join(", ") %></h3>
+    <% end %>
+
+    <div class="book-info">
+      <% if book.description %>
+        <p><%= book.description %></p>
+      <% end %>
+
+      <ul>
+        <% if book.publisher %>
+          <li>Publisher: <strong><%= book.publisher %></strong></li>
+        <% end %>
+        <% if book.publish_date %>
+          <li>Published on: <strong><%= book.publish_date.strftime("%-d %B %Y") %></strong></li>
+        <% end %>
+        <% if book.isbn %>
+          <li>ISBN: <strong><%= book.isbn %></strong></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</li>

@@ -1,7 +1,3 @@
-<!-- Task x -->
-<!-- Show some book information -->
-<!-- Hint: see snippets/book.md -->
-
 <li class="book">
   <img src="images/jacket.jpg" alt="Shakespeare vs Cthulhu cover image">
 
