@@ -1,0 +1,11 @@
+{
+  "template": "ruby",
+  "ports": [4567],
+  "name": "CodingWorkshop",
+  "logo": "logo.png",
+  "scripts": {
+    "Start Sinatra server": "cd ~/code/coding-workshop && ruby site.rb",
+    "Bundle": "bundle install",
+    "Re run": "bundle exec rerun ruby site.rb"
+  }
+}
