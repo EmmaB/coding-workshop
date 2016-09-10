@@ -6,7 +6,4 @@ Run the site using `ruby site.rb`
 
 During development use [rerun](https://github.com/alexch/rerun) to automatically restart the app when files are changed: `bundle exec rerun ruby site.rb`
 
-
-From Github:
-
 [![Nitrous Quickstart](https://nitrous-image-icons.s3.amazonaws.com/quickstart.svg)](https://www.nitrous.io/quickstart)
