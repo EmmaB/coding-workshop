@@ -9,6 +9,13 @@ get '/' do
 
   erb :home, locals: {
     query: params["query"],
-    books: books
+    books: books,
+    book: OpenStruct.new(:image_path    => "images/jacket.jpg",
+                         :title         => "War and Peace",
+                         :authors       => ["Bill", "Ben"],
+                         :description   => "a book",
+                         :publisher     => "Snowbooks",
+                         :publish_date  => nil,
+                         :isbn          => "9781905005123")
   }
 end

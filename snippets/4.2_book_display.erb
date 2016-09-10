@@ -1,0 +1,20 @@
+<!-- home.erb > Challenge 4.2 -->
+<!-- Show some dynamic book information -->
+<% book = {:image_path => "images/jacket.jpg", :title => "Bobcat", :authors => ["Bill", "Ben"], :description => "a book", :publisher => "Snowbooks", :publish_date => "2012-02-28", :isbn => "9781905005123"} %>
+<li class="book">
+  <img src="<%= book.image_path %>" alt="<%= book.title %> cover image">
+
+  <div class="book-details">
+    <h2><%= book.title %></h2>
+    <h3><%= book.authors %></h3>
+
+    <div class="book-info">
+      <p><%= book.description %></p>
+      <ul>
+        <li>Publisher: <strong><%= book.publisher %></strong></li>
+        <li>Published on: <strong><%= book.publish_date %></strong></li>
+        <li>ISBN: <strong><%= book.isbn %></strong></li>
+      </ul>
+    </div>
+  </div>
+</li>
