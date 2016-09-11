@@ -6,6 +6,7 @@
   "scripts": {
     "Bundle": "cd ~/code/coding-workshop && bundle install",
     "Start the server": "cd ~/code/coding-workshop && ruby site.rb",
-    "Restart the server": "cd ~/code/coding-workshop && bundle exec rerun ruby site.rb"
+    "Restart the server": "cd ~/code/coding-workshop && bundle exec rerun ruby site.rb",
+    "Ruby console": "cd ~/code/coding-workshop && irb -r ./site.rb"
   }
 }
