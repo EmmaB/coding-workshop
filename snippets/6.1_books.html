@@ -2,16 +2,16 @@
  <!-- This code will let you iterate through many books -->
 
 <% if query %>
-  <div class="page">
-    <% unless books.empty? %>
-      <ul class="books">
-        <% books.each do |book| %>
+  <% if books.empty? %>
+    <p>No books found for the query &lsquo;<strong><%= query %></strong>&rsquo;.</p>
+    <p>Please try another search.</p>
+  <% else %>
+    <ul class="books">
+      <% books.each do |book| %>
+        <li class="book">
           <!-- The code that displays a single book goes here -->
-        <% end %>
-      </ul>
-    <% else %>
-      <p>No books found for the query &lsquo;<strong><%= query %></strong>&rsquo;.</p>
-      <p>Please try another search.</p>
-    <% end %>
-  </div>
+        </li>
+      <% end %>
+    </ul>
+  <% end %>
 <% end %>

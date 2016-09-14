@@ -17,7 +17,7 @@ class GoogleBooksApi
       json[:items].map do |item|
         info = item[:volumeInfo]
 
-        OpenStruct.new(
+        Book.new(
           title: info[:title],
           authors: info[:authors],
           publisher: info[:publisher],
