@@ -14,7 +14,7 @@ class Book
     end
   end
 
-# put the formatted_date method here, from snippets/4.5_date_method.rb
+# put you method here, from snippets/4.5_methods.rb
 
   private
 
