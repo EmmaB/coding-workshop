@@ -1,4 +1,4 @@
-// home.erb > Task 7.1
+// home.erb > Task 10.1
 // This javascript will let you show and hide data
 
 

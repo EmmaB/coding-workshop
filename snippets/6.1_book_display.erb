@@ -5,7 +5,7 @@
 
   <div class="book-details">
     <h2><%= book.title %></h2>
-    <h3><%= book.authors %></h3>
+    <h3><%= book.authors.join(", ") %></h3>
 
     <div class="book-info">
       <p><%= book.description %></p>
