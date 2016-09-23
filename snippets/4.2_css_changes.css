@@ -1,0 +1,20 @@
+body {
+  /* change the size of the font on the next line in site.css  */
+  font: 16px Helvetica, Arial, sans-serif;
+  /* change the next line in site.css by using the colour options here: http://htmlcolorcodes.com/color-names/ : */
+  color: #333;
+  /* change the next line in site.css by using the colour options here: http://htmlcolorcodes.com/color-names/ : */
+  background-color: powderblue;
+  margin: 0;
+  padding: 60px 30px;
+  line-height: 1.4;
+}
+
+
+.container {
+  /* change the next line in site.css by using the colour options here: http://htmlcolorcodes.com/color-names/ : */
+  background-color: white;
+  max-width: 800px;
+  margin: 0 auto;
+  padding:20px;
+}

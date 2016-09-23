@@ -1,7 +1,7 @@
-# home.erb > Challenge 4.5
+# home.erb > Challenge 7.2
 # Write a method to transform the title into uppercase
 
-def uppercase_title
+def uppercase
   title.upcase
 end
 

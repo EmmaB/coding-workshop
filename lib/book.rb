@@ -14,7 +14,7 @@ class Book
     end
   end
 
-# put you method here, from snippets/4.5_methods.rb
+# put your method here, from snippets/7.2_methods.rb
 
   private
 
