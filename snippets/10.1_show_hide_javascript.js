@@ -4,7 +4,7 @@
 
 $(".book-info").each(function() {
   var
-    container = $(this);
+    container = $(this),
     link = $('<a href="#" />').text("Show info");
 
   container.hide();
