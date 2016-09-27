@@ -19,7 +19,7 @@ class GoogleBooksApi
 
         Book.new(
           title: info[:title],
-          authors: info[:authors],
+          authors: info[:authors] || [],
           publisher: info[:publisher],
           publish_date: parse_date(info[:publishedDate]),
           description: info[:description],
@@ -37,7 +37,7 @@ class GoogleBooksApi
   def parse_date(date_string)
     Date.parse(date_string)
   rescue TypeError, ArgumentError
-    nil
+    Date.today
   end
 
   def extract_isbn_13(identifiers)

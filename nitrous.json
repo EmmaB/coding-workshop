@@ -5,8 +5,7 @@
   "logo": "https://github.com/EmmaB/coding-workshop/blob/documentation/logo.png?raw=true",
   "scripts": {
     "Bundle": "cd ~/code/coding-workshop && bundle install",
-    "Start the server": "cd ~/code/coding-workshop && ruby site.rb",
-    "Restart the server": "cd ~/code/coding-workshop && bundle exec rerun ruby site.rb",
+    "Start the server": "cd ~/code/coding-workshop && bundle exec rerun ruby site.rb",
     "Interactive Ruby": "cd ~/code/coding-workshop && irb -r ./site.rb"
   }
 }

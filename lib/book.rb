@@ -14,14 +14,6 @@ class Book
     end
   end
 
-# put your method here, from snippets/7.2_methods.rb
-
-  private
-
-  def parse_date(date_string)
-    Date.parse(date_string)
-  rescue TypeError, ArgumentError
-    nil
-  end
+  # put your method here, from snippets/7.2_methods.rb
 
 end
