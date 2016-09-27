@@ -18,3 +18,15 @@ body {
   margin: 0 auto;
   padding:20px;
 }
+
+
+a {
+  /* change the next line in site.css by using the colour options here: http://htmlcolorcodes.com/color-names/ : */
+  color: orangered;
+}
+
+
+a:hover {
+  /* change the next line in site.css by using the colour options here: http://htmlcolorcodes.com/color-names/ : */
+  color: black;
+}
