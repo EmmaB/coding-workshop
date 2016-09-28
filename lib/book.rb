@@ -1,4 +1,4 @@
-# This is Book class, we use it to "model" the results that come back from the Google Search
+# This is Book class. We use it to "model" the results that come back from the Google Search.
 # You can learn more about classes here: https://code.tutsplus.com/tutorials/ruby-for-newbies-working-with-classes--net-15938
 class Book
   # Define the attributes that a book should have
@@ -15,8 +15,8 @@ class Book
                 :isbn
 
   # When we make a new Book we want to automatically populate any attributes with their provided values
-  # Ruby gives use an "initialize" method, which will run everytime a new Book is created (using Book.new)
-  # We setup initialize so it can receive a list of attributes with related values
+  # Ruby gives us an "initialize" method, which will run everytime a new Book is created (using Book.new)
+  # We set up initialize so it can receive a list of attributes with related values
   # Creating a new book with two attributes looks like: Book.new(title: "War and Peace", isbn: "9781905005123")
   def initialize(attributes = {})
     # Here we "loop around" every single attribute and value pair

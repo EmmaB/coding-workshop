@@ -12,5 +12,5 @@ SAMPLE_BOOK = Book.new(
   description:  "A book about war, mainly.", # Set the description
   publisher:    "Snowbooks",                 # Set the publisher
   publish_date: Date.new(2016, 3, 23),       # Set the publish date. We use a real Date object here, so it can be formatted later
-  isbn:         "9781905005123"              # Set the ISBN
+  isbn:         "9781905005123"              # Set the ISBN13
 ).freeze

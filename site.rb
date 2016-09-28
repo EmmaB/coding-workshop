@@ -1,4 +1,4 @@
-# Bundler is a way of easily including "dependencies".
+# Bundler is a way of including "dependencies".
 # Dependencies are openly available pieces of code that we can use to build new software
 # Take a look in Gemfile.lock to see what dependencies we are using
 # Learn more about Bundler here: http://bundler.io/v1.12/#guides
