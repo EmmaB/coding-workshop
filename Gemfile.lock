@@ -19,6 +19,7 @@ GEM
     nori (2.6.0)
     pkg-config (1.1.7)
     rack (1.6.4)
+    rack-nocache (0.1.0)
     rack-protection (1.5.3)
       rack
     rb-fsevent (0.9.7)
@@ -39,6 +40,7 @@ PLATFORMS
 DEPENDENCIES
   httparty
   lisbn
+  rack-nocache
   rerun
   sinatra
 

@@ -5,6 +5,13 @@
 require "bundler/setup"
 Bundler.require(:default)
 
+# Prevent asset caching using the rack-nocache gem
+# In a real website you woudln't want to do this, caching is a great way of reducing server load
+# and speeding up a site for your users
+# However, when we're developing a site we want to see any changes we make immediately
+# This line of code prevents the web browser from hanging on to old code so we always see that latest
+use Rack::Nocache
+
 # Include some local code from the "lib" directory
 # require_relative means we don't need to use the full path to each file; Ruby will work it out for us
 # Learn more about requiring files here: http://rubylearning.com/satishtalim/including_other_files_in_ruby.html
