@@ -12,8 +12,11 @@ require_relative "lib/google_books_api"
 require_relative "lib/book"
 require_relative "lib/sample_book"
 
-# Nitrous needs our web application to live at (bind to) a particular local IP address, so we make sure that happens
-set :bind, '0.0.0.0'
+# Set our web application to live at (bind to) a particular IP address and port
+# We read the IP and PORT directly from the environment (ENV) and fallback to default values if
+# specific values are not found in the environment
+set :bind, ENV["IP"] || '0.0.0.0'
+set :port, ENV["PORT"] || 8080
 
 # Everything from here is the actual Book Findr application!
 
